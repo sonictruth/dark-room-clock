@@ -81,13 +81,6 @@ void setupWifi()
     showText("Connected!");
   }
 
-  int brightness = atoi(prefs.getString(BRIGHTNESS_SETTINGS_KEY, "").c_str());
-  if (brightness < 2 || brightness > 100)
-  {
-    Serial.println("Invalid brightness value, using default 2");
-    brightness = 2;
-  }
-  setBrightnessPercent(brightness);
 
   String timezone = prefs.getString(TIMEZONE_SETTINGS_KEY, "");
   Serial.printf("Timezone: %s\n", timezone.c_str());
@@ -123,7 +116,14 @@ void setup()
 
   tft.init();
   tft.setRotation(0);
-  setBrightnessPercent(atoi(defaultBrightness));
+
+  int brightness = atoi(prefs.getString(BRIGHTNESS_SETTINGS_KEY, "20").c_str());
+  if (brightness < 2 || brightness > 100)
+  {
+    Serial.println("Invalid brightness value, using default 20");
+    brightness = 20;
+  }
+  setBrightnessPercent(brightness);
 
   showText("Starting...");
 
