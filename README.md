@@ -1,9 +1,8 @@
-#DARK ROOM CLOCK
+# DARK ROOM CLOCK
+Using Geek Magic ESP8266 clone. Added a speaker and a button using the only available GPIO.
 
-Using Geek Magic espressif8266  clone
 
-After installing/updating TFT libraries replace:
-
+Replace setup after installing the libs:
 .pio/libdeps/esp8266/TFT_eSPI/User_Setup_Select.h
 ```#include <User_Setup.h>``` 
 with
