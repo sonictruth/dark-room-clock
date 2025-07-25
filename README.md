@@ -1,5 +1,6 @@
-# DARK ROOM CLOCK
-A clock and countdown timer that can be used in a dark room by only displaying shades of red.
+# Dark Room Click
+
+A clock and countdown timer designed for dark rooms, displaying is only bit black/red.
 
 Hardware: Geek Magic Small TV/Weather Station ESP8266 clone. Added a speaker and a button using the only available GPIO.
 
