@@ -1,4 +1,4 @@
-# Dark Room Click
+# Dark Room Clock
 
 A clock and countdown timer designed for dark rooms, displaying is only bit black/red.
 
